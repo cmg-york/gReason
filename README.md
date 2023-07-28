@@ -98,5 +98,5 @@ To run the tool you will need SWI Prolog (tested under ver. 8.4.2), Java runtime
 ### Compilation
 
 1.  `javac -sourcepath ./src/ -d ./bin/ ./src/cmg/gReason/g2dt`
-2.  `java cmg.gReason.g2dt -c .\config\config.txt -f .\files\[Diagram Name].xml`
+2.  Can then run `java cmg.gReason.g2dt -c .\config\config.txt -f .\files\[Diagram Name].xml` as above and continue to step (5) above.
 
