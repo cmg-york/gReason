@@ -11,7 +11,7 @@ In its current stage gReason consists of:
 A [video presentation](https://youtu.be/DkVb_mgLsi8) of the tool can be found [here](https://youtu.be/DkVb_mgLsi8). 
 
 
-## Installation and Prerequisites (MS Windows)
+## Prerequisites and Installation (MS Windows)
 
 To run the tool you will need SWI Prolog (tested under ver. 8.4.2), Java runtime (tested in Java(TM) SE Runtime Environment (build 1.8.0_181)) and DT-Golog (see below).
 
@@ -56,7 +56,9 @@ To run the tool you will need SWI Prolog (tested under ver. 8.4.2), Java runtime
 	```prolog
 	Pol=(A : senseEffect(A) : (RestPol)).
 	```
-		   with
+
+	with
+
 	```prolog
 	map(A,G), Pol=(G : senseEffect(G) : (RestPol)).
 	```
@@ -84,10 +86,10 @@ To run the tool you will need SWI Prolog (tested under ver. 8.4.2), Java runtime
 ### To translate and analyze
 
 1. Export your diagram under `[RepoDir]\gReason\files\[Diagram Name].xml` - ensure the "compressed" option remains unchecked.
-2. Open a command line inside the `[RepoDir]\gReason` directory.
-4. Run `java -jar .\dist\gReason.jar -c .\config\config.txt .\files\[Diagram Name].xml`
+2. Open a Windows command prompt inside the `[RepoDir]\gReason` directory.
+4. Run `java -jar .\dist\gReason.jar -c .\config\config.txt -f .\files\[Diagram Name].xml`
 5. Observe that a `[Diagram Name].pl` file has been created in `.\files`
 6. Run `swipl .\files\[Diagram Name].pl`
-7. Inside the prolog environment do `run.` (don't forget the dot!)
-8. Observe optimal policy; press `.`. To exit SWI Prolog Ctr^C and `e`.
+7. Inside the prolog environment enter `run.` (don't forget the dot!)
+8. Observe optimal policy; press `.`. To exit SWI Prolog, Ctr^C and `e`.
 
