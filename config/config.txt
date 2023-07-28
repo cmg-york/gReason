@@ -1,1 +1,1 @@
-golog.path = ../resources/DT-Golog-Iface.pl
+golog.path = ./resources/DT-Golog-Iface.pl
