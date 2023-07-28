@@ -87,9 +87,16 @@ To run the tool you will need SWI Prolog (tested under ver. 8.4.2), Java runtime
 
 1. Export your diagram under `[RepoDir]\gReason\files\[Diagram Name].xml` - ensure the "compressed" option remains unchecked.
 2. Open a Windows command prompt inside the `[RepoDir]\gReason` directory.
+3. A precompiled JAR is under `.\dist\`, *use at own risk* as follows (compilation examples below):
 4. Run `java -jar .\dist\gReason.jar -c .\config\config.txt -f .\files\[Diagram Name].xml`
 5. Observe that a `[Diagram Name].pl` file has been created in `.\files`
 6. Run `swipl .\files\[Diagram Name].pl`
 7. Inside the prolog environment enter `run.` (don't forget the dot!)
 8. Observe optimal policy; press `.`. To exit SWI Prolog, Ctr^C and `e`.
+
+
+### Compilation
+
+1.  `javac -sourcepath ./src/ -d ./bin/ ./src/cmg/gReason/g2dt`
+2.  `java cmg.gReason.g2dt -c .\config\config.txt -f .\files\[Diagram Name].xml`
 
